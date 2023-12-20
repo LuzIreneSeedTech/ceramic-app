@@ -1,0 +1,173 @@
+* {
+  @include css-reset;
+}
+
+// NavBar
+.logo {
+  @include logo-style;
+}
+
+.btn {
+  @include button-style;
+  @include flex-center;
+}
+
+.btn-primary {
+  width: 120px;
+  height: 35px;
+}
+
+.btn-secondary {
+  width: 150px;
+  height: 40px;
+}
+
+.btn-secondary-clr {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+.btn-secondary-clr:hover {
+  background-color: $tertiary-color;
+  color: $primary-color;
+  cursor: pointer;
+}
+
+.btn-center-page {
+  margin: auto;
+}
+
+.nav-container {
+  @include flex-center;
+  width: 1152px;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 15px;
+}
+
+// Hero
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.carousel-container {
+  position: relative;
+  padding-bottom: 15px;
+
+  .carousel-content-container {
+    width: 1152px;
+    margin: auto;
+  }
+
+  .carousel-prev-next-btn {
+    margin: auto;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 55%;
+    font-size: 40px;
+    color: $primary-color;
+  }
+
+  .next {
+    right: 5%;
+  }
+
+  .prev {
+    left: 5%;
+  }
+
+  .next:hover,
+  .prev:hover {
+    color: $secondary-color;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .carousel-item {
+    padding: 60px 0px;
+
+    .carousel-txt-content {
+      width: 688px;
+      height: 140px;
+      margin: auto;
+
+      .carousel-title {
+        text-transform: uppercase;
+        padding-bottom: 30px;
+      }
+
+      .carousel-content,
+      .carousel-title {
+        text-align: center;
+      }
+    }
+
+    .carousel-img-container {
+      width: 1152px;
+      display: flex;
+      gap: 24px;
+      padding-top: 30px;
+
+      .second,
+      .down {
+        display: flex;
+        gap: 24px;
+      }
+
+      .second {
+        flex-direction: column;
+      }
+
+      .imgOne,
+      .imgTwo,
+      .imgThree,
+      .imgFour {
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .imgOne {
+        width: 563px;
+        height: 454px;
+      }
+
+      .imgTwo {
+        width: 564px;
+        height: 240px;
+      }
+
+      .imgThree,
+      .imgFour {
+        width: 270px;
+        height: 186px;
+      }
+    }
+
+    .carousel-indicator-container {
+      @include flex-center;
+      gap: 10px;
+      padding-top: 15px;
+
+      .carousel-indicator {
+        height: 4px;
+        width: 100px;
+        background-color: $primary-color;
+        display: inline-block;
+        border-radius: 10px;
+      }
+
+      .active-carousel-item {
+        background-color: $secondary-color;
+        opacity: 0.5;
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 17px;
+  color: #091420 !important;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: #5f6bff;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 15px;
+  color: #e3e6ef;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  width: 120px;
+  height: 35px;
+}
+
+.btn-secondary {
+  width: 150px;
+  height: 40px;
+}
+
+.btn-secondary-clr {
+  background-color: #091420;
+  color: #e3e6ef;
+}
+
+.btn-secondary-clr:hover {
+  background-color: #5f6bff;
+  color: #e3e6ef;
+  cursor: pointer;
+}
+
+.btn-center-page {
+  margin: auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1152px;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.carousel-container {
+  position: relative;
+  padding-bottom: 15px;
+}
+.carousel-container .carousel-content-container {
+  width: 1152px;
+  margin: auto;
+}
+.carousel-container .carousel-prev-next-btn {
+  margin: auto;
+}
+.carousel-container .prev,
+.carousel-container .next {
+  position: absolute;
+  top: 55%;
+  font-size: 40px;
+  color: #e3e6ef;
+}
+.carousel-container .next {
+  right: 5%;
+}
+.carousel-container .prev {
+  left: 5%;
+}
+.carousel-container .next:hover,
+.carousel-container .prev:hover {
+  color: #091420;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.carousel-container .carousel-item {
+  padding: 60px 0px;
+}
+.carousel-container .carousel-item .carousel-txt-content {
+  width: 688px;
+  height: 140px;
+  margin: auto;
+}
+.carousel-container .carousel-item .carousel-txt-content .carousel-title {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.carousel-container .carousel-item .carousel-txt-content .carousel-content,
+.carousel-container .carousel-item .carousel-txt-content .carousel-title {
+  text-align: center;
+}
+.carousel-container .carousel-item .carousel-img-container {
+  width: 1152px;
+  display: flex;
+  gap: 24px;
+  padding-top: 30px;
+}
+.carousel-container .carousel-item .carousel-img-container .second,
+.carousel-container .carousel-item .carousel-img-container .down {
+  display: flex;
+  gap: 24px;
+}
+.carousel-container .carousel-item .carousel-img-container .second {
+  flex-direction: column;
+}
+.carousel-container .carousel-item .carousel-img-container .imgOne,
+.carousel-container .carousel-item .carousel-img-container .imgTwo,
+.carousel-container .carousel-item .carousel-img-container .imgThree,
+.carousel-container .carousel-item .carousel-img-container .imgFour {
+  border-radius: 10px;
+  object-fit: cover;
+}
+.carousel-container .carousel-item .carousel-img-container .imgOne {
+  width: 563px;
+  height: 454px;
+}
+.carousel-container .carousel-item .carousel-img-container .imgTwo {
+  width: 564px;
+  height: 240px;
+}
+.carousel-container .carousel-item .carousel-img-container .imgThree,
+.carousel-container .carousel-item .carousel-img-container .imgFour {
+  width: 270px;
+  height: 186px;
+}
+.carousel-container .carousel-item .carousel-indicator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 15px;
+}
+.carousel-container .carousel-item .carousel-indicator-container .carousel-indicator {
+  height: 4px;
+  width: 100px;
+  background-color: #e3e6ef;
+  display: inline-block;
+  border-radius: 10px;
+}
+.carousel-container .carousel-item .carousel-indicator-container .active-carousel-item {
+  background-color: #091420;
+  opacity: 0.5;
+}/*# sourceMappingURL=style.css.map */
