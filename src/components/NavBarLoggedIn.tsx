@@ -33,3 +33,5 @@ export function NavBarLoggedIn() {
     </div>
   );
 }
+
+// To Do: combine all navbar.

@@ -27,6 +27,10 @@
   color: $primary-color;
 }
 
+.btn-no-bg {
+  background-color: transparent;
+}
+
 .btn-secondary-clr:hover {
   background-color: $tertiary-color;
   color: $primary-color;
@@ -271,5 +275,95 @@
       color: $primary-color;
       text-transform: capitalize;
     }
+  }
+}
+
+.page-container {
+  width: 1152px;
+  margin: auto;
+  padding-top: 45px;
+
+  .props-title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+  }
+
+  .props-equation-desc {
+    width: 350px;
+    padding-top: 20px;
+  }
+}
+
+.props-page-content {
+  @include flex-center;
+  align-items: flex-start;
+  gap: 100px;
+
+  // Form
+  .form-label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+  }
+
+  .form-input {
+    width: 350px;
+    height: 35px;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+  }
+
+  // Formula
+  .formula-container {
+    background-color: $secondary-color;
+    color: $primary-color;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+
+    .equation > .MathJax {
+      margin-bottom: 30px;
+    }
+
+    .label-name > .MathJax {
+      text-align: left !important;
+    }
+  }
+}
+
+// Table
+.table-container {
+  margin: auto;
+  margin-top: 50px;
+  background-color: $secondary-color;
+  border-radius: 10px;
+  padding: 15px;
+
+  .table-header-item {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.54px;
+    text-transform: capitalize;
+    padding: 15px 40px 15px 40px;
+    color: $primary-color;
+  }
+
+  .table-body-item {
+    text-align: center;
+    color: $primary-color;
+  }
+
+  .props-button {
+    @include flex-center;
   }
 }
