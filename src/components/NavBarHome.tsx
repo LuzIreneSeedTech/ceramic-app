@@ -9,3 +9,5 @@ export function NavBarHome() {
     </div>
   );
 }
+
+// To Do: combine all navbar.

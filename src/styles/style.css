@@ -45,6 +45,10 @@
   color: #e3e6ef;
 }
 
+.btn-no-bg {
+  background-color: transparent;
+}
+
 .btn-secondary-clr:hover {
   background-color: #5f6bff;
   color: #e3e6ef;
@@ -274,4 +278,85 @@
   font-size: 17px;
   color: #e3e6ef;
   text-transform: capitalize;
+}
+
+.page-container {
+  width: 1152px;
+  margin: auto;
+  padding-top: 45px;
+}
+.page-container .props-title {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.page-container .props-equation-desc {
+  width: 350px;
+  padding-top: 20px;
+}
+
+.props-page-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+.props-page-content .form-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+.props-page-content .form-input {
+  width: 350px;
+  height: 35px;
+  background-color: #e3e6ef;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 10px;
+  margin-bottom: 30px;
+}
+.props-page-content .formula-container {
+  background-color: #091420;
+  color: #e3e6ef;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.props-page-content .formula-container .equation > .MathJax {
+  margin-bottom: 30px;
+}
+.props-page-content .formula-container .label-name > .MathJax {
+  text-align: left !important;
+}
+
+.table-container {
+  margin: auto;
+  margin-top: 50px;
+  background-color: #091420;
+  border-radius: 10px;
+  padding: 15px;
+}
+.table-container .table-header-item {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.54px;
+  text-transform: capitalize;
+  padding: 15px 40px 15px 40px;
+  color: #e3e6ef;
+}
+.table-container .table-body-item {
+  text-align: center;
+  color: #e3e6ef;
+}
+.table-container .props-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

@@ -45,9 +45,29 @@ export const physChemImg = [
   },
 ];
 
+export const formLabel = [
+  { label: "sample name" },
+  { label: "wet weight" },
+  { label: "dry weight" },
+  { label: "first name" },
+  { label: "last name" },
+  { label: "email" },
+  { label: "year" },
+  { label: "course" },
+  { label: "password" },
+];
+
+export const tableHeader = [
+  { th: "sample name" },
+  { th: "wet wt." },
+  { th: "dried wt." },
+  { th: "%MC" },
+  { th: "status" },
+];
+
 // Interface
 export interface physChemPropsType {
-  physPropName?: string;
+  physPropName: string;
 }
 
 export interface propertiesType {
@@ -57,4 +77,8 @@ export interface propertiesType {
 export interface physChemImgType {
   imgUrl: string;
   physPropChoice: string;
+}
+
+export interface formLabelType {
+  label: string;
 }
