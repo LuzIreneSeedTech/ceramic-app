@@ -28,6 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -52,7 +53,6 @@
 .btn-secondary-clr:hover {
   background-color: #5f6bff;
   color: #e3e6ef;
-  cursor: pointer;
 }
 
 .btn-center-page {
@@ -305,7 +305,8 @@
   align-items: flex-start;
   gap: 100px;
 }
-.props-page-content .form-label {
+
+.form-label {
   display: block;
   font-size: 15px;
   font-weight: 500;
@@ -313,7 +314,8 @@
   text-transform: capitalize;
   padding-bottom: 5px;
 }
-.props-page-content .form-input {
+
+.form-input {
   width: 350px;
   height: 35px;
   background-color: #e3e6ef;
@@ -322,41 +324,110 @@
   padding: 0px 10px;
   margin-bottom: 30px;
 }
-.props-page-content .formula-container {
+
+.formula-container {
   background-color: #091420;
   color: #e3e6ef;
   width: 350px;
   padding: 20px;
   border-radius: 10px;
 }
-.props-page-content .formula-container .equation > .MathJax {
+.formula-container .equation > .MathJax {
   margin-bottom: 30px;
 }
-.props-page-content .formula-container .label-name > .MathJax {
+.formula-container .label-name > .MathJax {
   text-align: left !important;
 }
 
 .table-container {
+  position: relative;
+}
+
+.table-content {
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   background-color: #091420;
   border-radius: 10px;
   padding: 15px;
+  width: 900px;
 }
-.table-container .table-header-item {
+.table-content .table-header-item {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.54px;
   text-transform: capitalize;
-  padding: 15px 40px 15px 40px;
+  padding: 10px 40px 10px 40px;
   color: #e3e6ef;
+  border-bottom: 2px solid #e3e6ef;
 }
-.table-container .table-body-item {
+.table-content .table-body-item {
   text-align: center;
   color: #e3e6ef;
+  border-bottom: 1px solid #e3e6ef;
 }
-.table-container .props-button {
+.table-content .props-button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.props-line-graph {
+  width: 900px;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.line-graph {
+  height: 450px !important;
+  width: 900px !important;
+  background-color: #091420;
+  color: #e3e6ef;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.modal-container-bg {
+  background-color: #091420;
+  opacity: 0.8;
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+}
+
+.modal-content {
+  position: fixed;
+  inset: 120px 400px;
+  background-color: #efefef;
+  padding: 35px 50px;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.modal-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal-content-container .modal-content-title,
+.modal-content-container .modal-content-subtitle {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.modal-content-container .modal-content-title {
+  margin-bottom: 30px;
+}
+.modal-content-container .modal-content-subtitle {
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+.modal-content-container .modal-close-btn {
+  align-self: flex-end;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-overflow-hidden {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
