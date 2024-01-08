@@ -7,6 +7,7 @@ export function Button({
   secondaryColor,
   btnCenter,
   btnNoBG,
+  onClick,
 }: {
   children?: string;
   primary?: boolean;
@@ -14,6 +15,7 @@ export function Button({
   secondaryColor?: boolean;
   btnCenter?: boolean;
   btnNoBG?: boolean;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }) {
   const classes = className("btn", {
     "btn-primary": primary,
@@ -25,7 +27,11 @@ export function Button({
 
   return (
     <div className="btn-container">
-      <button className={classes}>{children}</button>
+      <button onClick={onClick} className={classes}>
+        {children}
+      </button>
     </div>
   );
 }
+
+// 236 -> modal toggling visibility
