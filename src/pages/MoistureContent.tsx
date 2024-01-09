@@ -7,6 +7,7 @@ import { formLabel } from "../utils/constants";
 
 export function MoistureContent() {
   const data = formLabel.slice(0, 3);
+
   return (
     <div className="moisture-content-container">
       <NavBarLoggedIn />

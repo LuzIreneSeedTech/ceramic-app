@@ -41,3 +41,26 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@mixin page-center {
+  width: 1152px;
+  margin: auto;
+}
+
+@mixin register-login-title {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+@mixin register-login-subtitle {
+  font-size: 13px;
+  margin-bottom: 30px;
+
+  a {
+    text-decoration: none;
+    color: $tertiary-color;
+  }
+}

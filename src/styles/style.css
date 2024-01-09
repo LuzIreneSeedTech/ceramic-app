@@ -64,8 +64,8 @@
   align-items: center;
   justify-content: center;
   width: 1152px;
-  justify-content: space-between;
   margin: auto;
+  justify-content: space-between;
   padding-top: 10px;
   height: 50px;
 }
@@ -245,10 +245,10 @@
 }
 
 .card-container {
-  width: 1152px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 1152px;
   margin: auto;
   flex-wrap: wrap;
   gap: 35px;
@@ -322,7 +322,7 @@
   border: none;
   border-radius: 5px;
   padding: 0px 10px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .formula-container {
@@ -430,4 +430,169 @@
 
 .modal-overflow-hidden {
   overflow: hidden;
+}
+
+.register,
+.login {
+  width: 1152px;
+  margin: auto;
+  margin-bottom: 25px;
+  padding-top: 0px;
+}
+.register .logo-container,
+.login .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.register .register-content,
+.login .register-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  align-items: flex-start;
+}
+.register .register-content .register-form-container,
+.login .register-content .register-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.register .register-content .register-form-container .register-title,
+.login .register-content .register-form-container .register-title {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.register .register-content .register-form-container .register-subtitle,
+.login .register-content .register-form-container .register-subtitle {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.register .register-content .register-form-container .register-subtitle a,
+.login .register-content .register-form-container .register-subtitle a {
+  text-decoration: none;
+  color: #5f6bff;
+}
+.register .register-hero,
+.login .register-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.register .register-hero .hero-upper,
+.login .register-hero .hero-upper {
+  display: flex;
+  gap: 10px;
+}
+.register .register-hero .hero-upper img,
+.login .register-hero .hero-upper img {
+  width: 200px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.register .register-hero .hero-down,
+.login .register-hero .hero-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  align-items: flex-start;
+}
+.register .register-hero .hero-down .left,
+.login .register-hero .hero-down .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.register .register-hero .hero-down .left img,
+.login .register-hero .hero-down .left img {
+  width: 270px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.register .register-hero .hero-down .right img,
+.login .register-hero .hero-down .right img {
+  width: 130px;
+  height: 275px;
+  border-radius: 5px;
+}
+
+.login {
+  margin-bottom: 0px;
+}
+
+.login-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.login-content .login-title {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.login-content .login-subtitle {
+  font-size: 13px;
+  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+.login-content .login-subtitle a {
+  text-decoration: none;
+  color: #5f6bff;
+}
+
+.login-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.login-hero .one,
+.login-hero .two,
+.login-hero .three,
+.login-hero .four,
+.login-hero .up,
+.login-hero .down {
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+}
+.login-hero .one {
+  width: 170px;
+  height: 331px;
+}
+.login-hero .two,
+.login-hero .four {
+  width: 230px;
+  height: 331px;
+}
+.login-hero .three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-hero .three .up,
+.login-hero .three .down {
+  width: 350px;
+  height: 161px;
 }/*# sourceMappingURL=style.css.map */
