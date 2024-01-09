@@ -43,9 +43,8 @@
 
 .nav-container {
   @include flex-center;
-  width: 1152px;
+  @include page-center;
   justify-content: space-between;
-  margin: auto;
   padding-top: 10px;
   height: 50px;
 }
@@ -65,8 +64,7 @@
   padding-bottom: 15px;
 
   .carousel-content-container {
-    width: 1152px;
-    margin: auto;
+    @include page-center;
   }
 
   .carousel-prev-next-btn {
@@ -244,9 +242,8 @@
 
 // Card
 .card-container {
-  width: 1152px;
   @include flex-center;
-  margin: auto;
+  @include page-center;
   flex-wrap: wrap;
   gap: 35px;
   padding: 30px 0px;
@@ -321,7 +318,7 @@
   border: none;
   border-radius: 5px;
   padding: 0px 10px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 // Formula
@@ -438,4 +435,142 @@
 
 .modal-overflow-hidden {
   overflow: hidden;
+}
+
+// Register Page
+.register,
+.login {
+  @include page-center;
+  margin-bottom: 25px;
+  padding-top: 0px;
+
+  .logo-container {
+    @include flex-center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .register-content {
+    @include flex-center;
+    gap: 80px;
+    align-items: flex-start;
+
+    .register-form-container {
+      @include flex-center;
+      flex-direction: column;
+
+      .register-title {
+        @include register-login-title;
+      }
+
+      .register-subtitle {
+        @include register-login-subtitle;
+      }
+    }
+  }
+
+  .register-hero {
+    @include flex-center;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+    .hero-upper {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 200px;
+        height: 330px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+
+    .hero-down {
+      @include flex-center;
+      gap: 10px;
+      align-items: flex-start;
+
+      .left {
+        @include flex-center;
+        flex-direction: column;
+        gap: 10px;
+
+        img {
+          width: 270px;
+          height: 132px;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      }
+
+      .right {
+        img {
+          width: 130px;
+          height: 275px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+// Login Page
+.login {
+  margin-bottom: 0px;
+}
+
+.login-content {
+  @include flex-center;
+  flex-direction: column;
+  margin-bottom: 25px;
+
+  .login-title {
+    @include register-login-title;
+  }
+
+  .login-subtitle {
+    @include register-login-subtitle;
+    margin-bottom: 40px;
+  }
+}
+
+.login-hero {
+  @include flex-center;
+  align-items: flex-start;
+  gap: 10px;
+
+  .one,
+  .two,
+  .three,
+  .four,
+  .up,
+  .down {
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .one {
+    width: 170px;
+    height: 331px;
+  }
+
+  .two,
+  .four {
+    width: 230px;
+    height: 331px;
+  }
+
+  .three {
+    @include flex-center;
+    flex-direction: column;
+    gap: 10px;
+
+    .up,
+    .down {
+      width: 350px;
+      height: 161px;
+    }
+  }
 }
