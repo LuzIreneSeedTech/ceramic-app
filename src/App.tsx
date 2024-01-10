@@ -8,11 +8,11 @@ import { Login } from "./pages/Login";
 export function App() {
   return (
     <>
-      {/* <Home />; */}
+      {/* <Home /> */}
       {/* <PhysChemProps /> */}
-      {/* <MoistureContent /> */}
+      <MoistureContent />
       {/* <Register /> */}
-      <Login />
+      {/* <Login /> */}
     </>
   );
 }
