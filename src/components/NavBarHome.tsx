@@ -5,7 +5,7 @@ export function NavBarHome() {
   return (
     <div className="nav-container">
       <Logo />
-      <Button primary>menu</Button>
+      <Button primary>login</Button>
     </div>
   );
 }

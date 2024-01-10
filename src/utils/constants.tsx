@@ -1,3 +1,7 @@
+import { GoPerson } from "react-icons/go";
+import { IoMoonOutline } from "react-icons/io5";
+import { IoIosLogOut } from "react-icons/io";
+
 export const properties = [
   { propName: "physical props" },
   { propName: "chemical props" },
@@ -63,6 +67,21 @@ export const tableHeader = [
   { th: "dried wt." },
   { th: "%MC" },
   { th: "status" },
+];
+
+export const profileDropdownContent = [
+  {
+    label: "profile",
+    icon: <GoPerson />,
+  },
+  {
+    label: "dark mode",
+    icon: <IoMoonOutline />,
+  },
+  {
+    label: "logout",
+    icon: <IoIosLogOut />,
+  },
 ];
 
 // Interface
