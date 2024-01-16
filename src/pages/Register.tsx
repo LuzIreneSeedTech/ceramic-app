@@ -18,6 +18,7 @@ export function Register() {
           <p className="register-subtitle">
             Already have an account? <a href="#">Login</a>
           </p>
+          {/* TO DO: make the course a dropdown selection */}
           <Form data={registerInputLabel} />
           <Button>create account</Button>
         </div>

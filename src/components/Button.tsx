@@ -1,4 +1,5 @@
 import className from "classnames";
+import { ReactNode } from "react";
 
 export function Button({
   children,
@@ -9,7 +10,7 @@ export function Button({
   btnNoBG,
   onClick,
 }: {
-  children?: string;
+  children?: ReactNode;
   primary?: boolean;
   secondary?: boolean;
   secondaryColor?: boolean;

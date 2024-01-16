@@ -1,6 +1,7 @@
 import { GoPerson } from "react-icons/go";
 import { IoMoonOutline } from "react-icons/io5";
 import { IoIosLogOut } from "react-icons/io";
+import { CiUser, CiSettings, CiLogout } from "react-icons/ci";
 
 export const properties = [
   { propName: "physical props" },
@@ -81,6 +82,24 @@ export const profileDropdownContent = [
   {
     label: "logout",
     icon: <IoIosLogOut />,
+  },
+];
+
+export const profileSidebarLinks = [
+  {
+    label: "your profile",
+    icon: <CiUser />,
+    path: "/profile",
+  },
+  {
+    label: "account settings",
+    icon: <CiSettings />,
+    path: "/account-settings",
+  },
+  {
+    label: "logout",
+    icon: <CiLogout />,
+    path: "/logout",
   },
 ];
 
