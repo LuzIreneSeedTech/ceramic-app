@@ -1,4 +1,3 @@
-import { Dispatch, LegacyRef, SetStateAction, useEffect, useRef } from "react";
 import { physChemImg, profileDropdownContent } from "../utils/constants";
 
 export function ProfileDropdownItem({
@@ -17,7 +16,7 @@ export function ProfileDropdownItem({
         <div className="header content">
           <h4>luz irene cortez</h4>
           <p>BS CerE - 5th Year</p>
-          <p>cortezluzirene.msuiit.edu.ph</p>
+          <p>cortezluzirene@g.msuiit.edu.ph</p>
         </div>
       </div>
 
