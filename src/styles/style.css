@@ -198,6 +198,17 @@
   justify-content: center;
   gap: 70px;
 }
+.dropdown-container a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #091420;
+  text-decoration: none;
+}
+.dropdown-container a:hover,
+.dropdown-container a:active {
+  color: #5f6bff;
+}
 .dropdown-container .dropdown-content {
   position: relative;
 }
@@ -253,7 +264,8 @@
   gap: 35px;
   padding: 30px 0px;
 }
-.card-container .card-content {
+.card-container .card-content,
+.card-container a {
   width: 335px;
   height: 335px;
   background-color: #091420;
@@ -265,13 +277,19 @@
   flex-direction: column;
   gap: 10px;
 }
-.card-container .card-content .card-img {
+.card-container .card-content a,
+.card-container a a {
+  text-decoration: none;
+}
+.card-container .card-content a .card-img,
+.card-container a a .card-img {
   width: 100%;
   height: 265px;
   object-fit: cover;
   border-radius: 10px;
 }
-.card-container .card-content .card-txt {
+.card-container .card-content a .card-txt,
+.card-container a a .card-txt {
   color: #e3e6ef;
   text-align: center;
   font-size: 17px;
@@ -394,13 +412,20 @@
   height: 100vh;
 }
 
-.modal-content {
+.modal-content,
+.modal-container-AP {
   position: fixed;
-  inset: 120px 400px;
   background-color: #efefef;
   padding: 35px 50px;
   border-radius: 10px;
-  height: 500px;
+}
+
+.modal-content {
+  inset: 15% 25%;
+}
+
+.modal-container-AP {
+  inset: 10% 25%;
 }
 
 .modal-content-container {
@@ -631,6 +656,9 @@
 .active-profile-drpdwn .middle-container,
 .active-profile-drpdwn .footer-container {
   padding: 25px 39px 0px 39px;
+}
+.active-profile-drpdwn .middle-container a {
+  text-decoration: none;
 }
 .active-profile-drpdwn .middle,
 .active-profile-drpdwn .footer {

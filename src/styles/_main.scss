@@ -188,6 +188,19 @@
   @include flex-center;
   gap: 70px;
 
+  a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $secondary-color;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    color: $tertiary-color;
+  }
+
   .dropdown-content {
     position: relative;
 
@@ -247,7 +260,8 @@
   gap: 35px;
   padding: 30px 0px;
 
-  .card-content {
+  .card-content,
+  a {
     width: 335px;
     height: 335px;
     background-color: $secondary-color;
@@ -257,19 +271,23 @@
     flex-direction: column;
     gap: 10px;
 
-    .card-img {
-      width: 100%;
-      height: 265px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
+    a {
+      text-decoration: none;
 
-    .card-txt {
-      color: $primary-color;
-      text-align: center;
-      font-size: 17px;
-      color: $primary-color;
-      text-transform: capitalize;
+      .card-img {
+        width: 100%;
+        height: 265px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .card-txt {
+        color: $primary-color;
+        text-align: center;
+        font-size: 17px;
+        color: $primary-color;
+        text-transform: capitalize;
+      }
     }
   }
 }
@@ -397,13 +415,20 @@
   height: 100vh;
 }
 
-.modal-content {
+.modal-content,
+.modal-container-AP {
   position: fixed;
-  inset: 120px 400px;
   background-color: #efefef;
   padding: 35px 50px;
   border-radius: 10px;
-  height: 500px;
+}
+
+.modal-content {
+  inset: 15% 25%;
+}
+
+.modal-container-AP {
+  inset: 10% 25%;
 }
 
 .modal-content-container {
@@ -612,6 +637,12 @@
   .middle-container,
   .footer-container {
     padding: 25px 39px 0px 39px;
+  }
+
+  .middle-container {
+    a {
+      text-decoration: none;
+    }
   }
 
   .middle,

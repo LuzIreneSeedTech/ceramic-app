@@ -4,9 +4,11 @@ import ReactDOM from "react-dom";
 export function Modal({
   onClose,
   children,
+  path,
 }: {
   onClose: React.MouseEventHandler<HTMLDivElement>;
   children: ReactNode;
+  path: string;
 }) {
   useEffect(() => {
     document.body.classList.add("modal-overflow-hidden");
@@ -19,7 +21,13 @@ export function Modal({
   return ReactDOM.createPortal(
     <>
       <div onClick={onClose} className="modal-container-bg"></div>
-      <div className="modal-content">{children}</div>
+      <div
+        className={`${
+          path === "/apparent-porosity" ? "modal-container-AP" : "modal-content"
+        }`}
+      >
+        {children}
+      </div>
     </>,
     document.querySelector(".modal-container")!
   );

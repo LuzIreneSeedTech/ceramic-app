@@ -1,4 +1,5 @@
 import { physChemImg, profileDropdownContent } from "../utils/constants";
+import { Link } from "./Link";
 
 export function ProfileDropdownItem({
   isProfileOpen,
@@ -24,13 +25,24 @@ export function ProfileDropdownItem({
 
       <div className="middle-container">
         {profileDropdownContent
-          .slice(0, profileDropdownContent.length - 1)
+          .slice(0, profileDropdownContent.length - 2)
           .map((item) => (
-            <a href="#" className={`middle content`}>
-              <div className="middle-icon">{item.icon}</div>
-              <h4>{item.label}</h4>
-            </a>
+            <Link to={item.path}>
+              <div className="middle content">
+                <div className="middle-icon">{item.icon}</div>
+                <h4>{item.label}</h4>
+              </div>
+            </Link>
           ))}
+
+        <div className="middle content">
+          <div className="middle-icon">
+            {profileDropdownContent[profileDropdownContent.length - 2].icon}
+          </div>
+          <h4>
+            {profileDropdownContent[profileDropdownContent.length - 2].label}
+          </h4>
+        </div>
       </div>
 
       <hr></hr>

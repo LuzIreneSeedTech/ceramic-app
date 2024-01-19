@@ -15,6 +15,8 @@ export function Dropdown({
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isPhysPropVisible, setIsPhysPropVisible] = useState(false);
+
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
@@ -33,9 +35,9 @@ export function Dropdown({
         <GoChevronDown className="dropdown-arrow" />
       </div>
 
-      {isOpen && defaultChoice === "physical props" && (
+      {isOpen && (
         <div className="dropdown-choices">
-          {/* <div className="dropdown-item">{defaultChoice}</div> */}
+          <div className="dropdown-item">{defaultChoice}</div>
           {choicesPhysChemProp.map((physChemPropItem) => (
             <div
               className="dropdown-item"
@@ -50,11 +52,5 @@ export function Dropdown({
   );
 }
 
-// watch again
-// 207
-// 208
-// 209
-// 210
-// 211
-// 212
-// 213
+// dropdown start
+// 197

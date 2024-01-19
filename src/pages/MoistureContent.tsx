@@ -1,20 +1,20 @@
 import { Form } from "../components/Form";
 import { Formula } from "../components/Formula";
 import { LineGraph } from "../components/LineGraph";
-import { NavBarLoggedIn } from "../components/NavBarLoggedIn";
 import { Table } from "../components/Table";
-import { formLabel } from "../utils/constants";
+import { propsContentType } from "../utils/constants";
 
-export function MoistureContent() {
-  const data = formLabel.slice(0, 3);
+export function MoistureContent({ props }: { props?: propsContentType }) {
+  const data = props?.formContent;
+
+  console.log("data", props);
 
   return (
     <div className="moisture-content-container">
-      <NavBarLoggedIn />
       <div className="page-container">
         <div className="props-page-content">
           <div className="props-form">
-            <h1 className="props-title">moisture content</h1>
+            <h1 className="props-title">{props?.propName}</h1>
             <Form data={data} />
           </div>
 
@@ -29,7 +29,7 @@ export function MoistureContent() {
         </div>
 
         <div className="props-table">
-          <Table />
+          <Table tableHeader={data} />
         </div>
 
         <div className="props-line-graph">
