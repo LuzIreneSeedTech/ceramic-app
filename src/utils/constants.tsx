@@ -8,7 +8,7 @@ export const properties = [
   { propName: "chemical props" },
 ];
 
-export const physChemProps = [
+export const physicalProps = [
   { physPropName: "water absoprtion" },
   { physPropName: "moisture content" },
   { physPropName: "particle size distribution" },
@@ -62,6 +62,40 @@ export const formLabel = [
   { label: "password" },
 ];
 
+export const physPropsContent = [
+  {
+    propName: "water absorption",
+    formContent: [
+      { label: "sample name", shortLabel: "sample name" },
+      { label: "wet weight", shortLabel: "wet wt." },
+      { label: "dried weight", shortLabel: "dried wt." },
+    ],
+    imgUrl:
+      "https://images.unsplash.com/photo-1609881583302-61548332039c?q=80&w=1788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    propName: "apparent porosity",
+    formContent: [
+      { label: "sample name", shortLabel: "sample name" },
+      { label: "soaked weight", shortLabel: "wet wt." },
+      { label: "dried weight", shortLabel: "dried wt." },
+      { label: "suspended weight", shortLabel: "susp. wt." },
+    ],
+    imgUrl:
+      "https://images.unsplash.com/photo-1599833114852-724119b27cd0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    propName: "moisture content",
+    formContent: [
+      { label: "sample name", shortLabel: "sample name" },
+      { label: "wet weight", shortLabel: "wet wt." },
+      { label: "dried weight", shortLabel: "dried wt." },
+    ],
+    imgUrl:
+      "https://images.unsplash.com/photo-1599833114852-724119b27cd0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+];
+
 export const tableHeader = [
   { th: "sample name" },
   { th: "wet wt." },
@@ -74,14 +108,17 @@ export const profileDropdownContent = [
   {
     label: "profile",
     icon: <GoPerson />,
+    path: "/profile",
   },
   {
     label: "dark mode",
     icon: <IoMoonOutline />,
+    path: null,
   },
   {
     label: "logout",
     icon: <IoIosLogOut />,
+    path: "/logout",
   },
 ];
 
@@ -103,6 +140,14 @@ export const profileSidebarLinks = [
   },
 ];
 
+export const formulaContent = [
+  {
+    propName: "water absorption",
+    formula: "$$MC=({m_w - m_d}/{m_d}) * 100\\%$$",
+    labelName: "$$MC=\\text{Moisture Content}$$",
+  },
+];
+
 // Interface
 export interface physChemPropsType {
   physPropName: string;
@@ -119,4 +164,22 @@ export interface physChemImgType {
 
 export interface formLabelType {
   label: string;
+}
+
+export interface propsContentType {
+  propName: string;
+  formContent?: propsFormContentType[];
+  imgUrl: string;
+}
+
+export interface propsFormContentType {
+  label: string;
+  shortLabel?: string;
+}
+
+export interface tableDataType {
+  sampleName: string;
+  wetWt?: number;
+  driedWt?: number;
+  suspendedWt?: number;
 }

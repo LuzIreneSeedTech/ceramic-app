@@ -1,14 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import {
-  properties,
-  physChemProps,
-  physChemPropsType,
-  propertiesType,
-} from "../utils/constants";
+import { properties, physChemPropsType } from "../utils/constants";
 import { Button } from "./Button";
 import { Dropdown } from "./Dropdown";
 import { Logo } from "./Logo";
 import { ProfileDropdownItem } from "./ProfileDropdownItem";
+import { Link } from "./Link";
 
 export function NavBarLoggedIn() {
   const [selection, setSelection] = useState<physChemPropsType | null>(null);
@@ -44,12 +40,9 @@ export function NavBarLoggedIn() {
       <Logo />
       <div className="dropdown-container">
         {properties.map((item) => (
-          <Dropdown
-            defaultChoice={item.propName}
-            choicesPhysChemProp={physChemProps}
-            value={selection}
-            onChange={handleSelect}
-          />
+          <Link to={`/${item.propName.replace(/\s+/g, "-")}`}>
+            {item.propName}
+          </Link>
         ))}
       </div>
 

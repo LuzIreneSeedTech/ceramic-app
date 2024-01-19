@@ -2,7 +2,13 @@ import { ReactNode } from "react";
 import { NavigationContextType } from "../context/navigation";
 import { useNavigation } from "../hooks/use-navigation";
 
-export function Link({ to, children }: { to: string; children: ReactNode }) {
+export function Link({
+  to,
+  children,
+}: {
+  to: string | null;
+  children: ReactNode;
+}) {
   const navigationContext = useNavigation();
 
   if (!navigationContext) {
@@ -18,11 +24,11 @@ export function Link({ to, children }: { to: string; children: ReactNode }) {
 
     event.preventDefault(); // stops the standard navigation, that is, not triggering a total page refresh
 
-    navigate(to);
+    navigate(to as string);
   };
 
   return (
-    <a href={to} onClick={handleClick}>
+    <a href={to as string} onClick={handleClick}>
       {children}
     </a>
   );
