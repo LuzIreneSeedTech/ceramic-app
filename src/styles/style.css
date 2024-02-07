@@ -68,6 +68,9 @@
   padding-top: 10px;
   height: 50px;
 }
+.nav-container a {
+  text-decoration: none;
+}
 
 .active {
   display: block;

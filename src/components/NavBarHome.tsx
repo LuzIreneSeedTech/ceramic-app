@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { Logo } from "./Logo";
 
@@ -5,7 +6,9 @@ export function NavBarHome() {
   return (
     <div className="nav-container">
       <Logo />
-      <Button primary>login</Button>
+      <Link to={"/login"}>
+        <Button primary>login</Button>
+      </Link>
     </div>
   );
 }
