@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
 import { Form } from "../components/Form";
 import { Logo } from "../components/Logo";
@@ -16,11 +17,11 @@ export function Register() {
         <div className="register-form-container">
           <h2 className="register-title">create account</h2>
           <p className="register-subtitle">
-            Already have an account? <a href="#">Login</a>
+            Already have an account? <Link to={"/login"}>Login</Link>
           </p>
           {/* TO DO: make the course a dropdown selection */}
           <Form data={registerInputLabel} />
-          <Button>create account</Button>
+          <Button primary>register</Button>
         </div>
 
         <div className="register-hero">

@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
 import { Form } from "../components/Form";
+// import { Link } from "../components/Link";
 import { Logo } from "../components/Logo";
 import { formLabel, physChemImg } from "../utils/constants";
 
@@ -15,7 +17,7 @@ export function Login() {
       <div className="login-content">
         <h2 className="login-title">log in</h2>
         <p className="login-subtitle">
-          Don't have an account? <a href="#">Create Account</a>
+          Don't have an account? <Link to={"/register"}>Create Account</Link>
         </p>
         <Form data={loginFormLabel} />
         <Button primary>log in</Button>
